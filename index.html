@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SULAIMAN 777 Pro Gaming Zone</title>
+<style>
+body{
+    margin:0;
+    padding:0;
+    background:black;
+    font-family:Arial,sans-serif;
+    color:white;
+    text-align:center;
+}
+
+/* Neon Glow Title */
+h1{
+    font-size:70px;
+    margin-top:50px;
+    color:#0ff;
+    text-shadow:0 0 10px #0ff,0 0 20px #0ff,0 0 40px #00f;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    0%{text-shadow:0 0 10px #0ff,0 0 20px #0ff,0 0 40px #00f;}
+    100%{text-shadow:0 0 20px #0ff,0 0 40px #0ff,0 0 80px #00f;}
+}
+
+/* Button */
+.button-enter, .install-btn{
+    display:inline-block;
+    margin:20px;
+    padding:15px 40px;
+    font-size:22px;
+    color:white;
+    background:linear-gradient(45deg,#ff00ff,#00ffff);
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    box-shadow:0 0 20px #ff00ff;
+    transition:0.3s;
+}
+.button-enter:hover, .install-btn:hover{
+    box-shadow:0 0 40px #00ffff;
+    transform:scale(1.1);
+}
+
+/* Games Section */
+.games-container{
+    display:none;
+    padding:20px;
+}
+.game{
+    background:#111;
+    margin:20px auto;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 0 20px #ff00ff;
+    max-width:900px;
+}
+.game iframe{
+    width:800px;
+    height:500px;
+    border:none;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+.game h2{
+    margin:5px 0;
+    color:#ff00ff;
+}
+.game p{
+    font-size:16px;
+    color:#0ff;
+}
+.whatsapp-button{
+    display:inline-block;
+    background:#25D366;
+    color:white;
+    padding:10px 20px;
+    border-radius:10px;
+    font-weight:bold;
+    margin-top:10px;
+    cursor:pointer;
+}
+.whatsapp-button img{
+    width:20px;
+    vertical-align:middle;
+    margin-right:5px;
+}
+
+/* Mobile Responsive */
+@media(max-width:850px){
+    .game iframe{width:95%; height:400px;}
+}
+</style>
+</head>
+<body>
+
+<h1>SULAIMAN 777</h1>
+<button class="button-enter" onclick="openGames()">ENTER GAMING ZONE</button>
+<button class="install-btn" onclick="installApp()">INSTALL GAME ZONE</button>
+
+<div class="games-container" id="games">
+    <!-- Game 1 -->
+    <div class="game">
+        <iframe src="https://www.crazygames.com/embed/tetris"></iframe>
+        <h2>Tetris</h2>
+        <p>Made by Sulaiman the Game Coder. Classic block puzzle game.</p>
+        <a class="whatsapp-button" href="https://wa.me/01971920788?text=Hi%20Sulaiman,%20I%20am%20interested%20in%20the%20paid%20game!" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"> Contact Us / Paid Game
+        </a>
+    </div>
+
+    <!-- Game 2 -->
+    <div class="game">
+        <iframe src="https://www.crazygames.com/embed/snake"></iframe>
+        <h2>Snake</h2>
+        <p>Made by Sulaiman the Game Coder. Classic snake game for all ages.</p>
+        <a class="whatsapp-button" href="https://wa.me/01971920788?text=Hi%20Sulaiman,%20I%20am%20interested%20in%20the%20paid%20game!" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"> Contact Us / Paid Game
+        </a>
+    </div>
+
+    <!-- Game 3 -->
+    <div class="game">
+        <iframe src="https://www.crazygames.com/embed/2048"></iframe>
+        <h2>2048</h2>
+        <p>Made by Sulaiman the Game Coder. Slide the tiles to reach 2048.</p>
+        <a class="whatsapp-button" href="https://wa.me/01971920788?text=Hi%20Sulaiman,%20I%20am%20interested%20in%20the%20paid%20game!" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"> Contact Us / Paid Game
+        </a>
+    </div>
+
+</div>
+
+<script>
+// Show Games
+function openGames(){
+    document.getElementById('games').style.display='block';
+    window.scrollTo(0,document.getElementById('games').offsetTop);
+}
+
+// PWA Install Demo
+function installApp(){
+    alert('To install this gaming zone, open this site in your browser menu and select "Add to Home Screen".');
+}
+</script>
+
+</body>
+  </html>
